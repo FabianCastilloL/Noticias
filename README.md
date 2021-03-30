@@ -1,2 +1,0 @@
-# Noticias
-Sitio de noticias
