@@ -22,6 +22,11 @@ body {
     }
 }
 
-.accidente {
-    color: #b22222;
+.Accidente {
+    color: #ffffff;
+    width: 350px;
+}
+
+h1 {
+    color: blanchedalmond;
 }
