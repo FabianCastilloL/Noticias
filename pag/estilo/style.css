@@ -36,3 +36,8 @@ body {
 .titulo-noticia {
     color: blanchedalmond;
 }
+
+
+.footer-fondo {
+    background: rgba(211, 210, 210, 0.603);
+}
