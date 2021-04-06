@@ -1,0 +1,39 @@
+body {
+    background: #117fc9;
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+}
+
+.header {
+    color: #000000;
+    font-size: 27px;
+    padding: 10px;
+    font-family: "Homer Simpson UI";
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+span {
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #0062cc;
+    border-bottom: 2px solid #0062cc;
+}
+
+.box {
+    padding: 60px 0px;
+}
+
+.text {
+    margin: 20px 0px;
+}
+
+.fa {
+    color: #020203;
+}
