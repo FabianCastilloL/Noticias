@@ -1,12 +1,11 @@
 body {
     background: #bdc3c7;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+    background: -webkit-linear-gradient(to right, #468f7f, #bdc3c7);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    background: linear-gradient(to right, #34689c, #bdc3c7);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
 
 .carousel-item {
     width: 100%;
@@ -37,7 +36,29 @@ body {
     color: blanchedalmond;
 }
 
-
 .footerfondo {
     background: rgba(211, 210, 210, 0.603);
+}
+
+.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.fa-twitter {
+    color: #00aced
+}
+
+.fa-facebook-square {
+    color: #3b5998
+}
+
+.centrado {
+    max-width: 85%;
+    height: auto;
+    margin: 10px auto;
+    display: block;
 }
