@@ -88,3 +88,20 @@ img.centrado {
 img.centrado:hover {
     filter: grayscale(75);
 }
+
+
+/*bordes imagenes de noticias*/
+.cards {
+    border-radius: 30px;
+}
+
+/*texto de cada noticia*/
+.noticia {
+    font-size: 20px;
+}
+
+.texto-noticia {
+    padding: 10px;
+    background: rgba(143, 143, 143, 0.349);
+    border-radius: 50px;
+}
