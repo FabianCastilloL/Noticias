@@ -91,11 +91,14 @@ img.centrado:hover {
 
 
 /*bordes imagenes de noticias*/
+
 .cards {
     border-radius: 30px;
 }
 
+
 /*texto de cada noticia*/
+
 .noticia {
     font-size: 20px;
 }
@@ -104,4 +107,8 @@ img.centrado:hover {
     padding: 10px;
     background: rgba(143, 143, 143, 0.349);
     border-radius: 50px;
+}
+
+img.logofooter {
+    width: 150px;
 }
