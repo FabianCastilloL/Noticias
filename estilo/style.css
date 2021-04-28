@@ -1,105 +1,110 @@
-body {
-    background: #bdc3c7;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #468f7f, #bdc3c7);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #34689c, #bdc3c7);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.carousel-inner img {
-    width: 100%;
-    max-height: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.carousel-inner {
-    height: 100%;
-}
-
-.container {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-p {
-    font-family: 'Raleway', sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Raleway', sans-serif;
-}
-
-.footerfondo {
-    background: rgba(211, 210, 210, 0.603);
-}
-
-.footerfondo ul li a:hover {
-    color: #ffffff;
-    padding-left: 2px;
-}
-
-.fa-instagram {
-    color: transparent;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-size: 45px;
-}
-
-.fa-twitter {
-    color: #00aced;
-    font-size: 45px;
-}
-
-.fa-facebook-square {
-    color: #3b5998;
-    font-size: 45px;
-}
-
-.centrado {
-    max-width: 70%;
-    height: auto;
-    margin: 10px auto;
-    display: block;
-    border-radius: 85%;
-}
-
-img.centrado {
-    cursor: pointer;
-    transition: all 2s ease;
-}
-
-img.centrado:hover {
-    filter: grayscale(75);
-}
-
-
-/*bordes imagenes de noticias*/
-
-.cards {
-    border-radius: 30px;
-}
-
-
-/*texto de cada noticia*/
-
-.noticia {
-    font-size: 20px;
-}
-
-.texto-noticia {
-    padding: 10px;
-    background: rgba(143, 143, 143, 0.349);
-    border-radius: 50px;
-}
-
-img.logofooter {
-    width: 120px;
-}
+        body {
+            background: #bdc3c7;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #468f7f, #bdc3c7);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #34689c, #bdc3c7);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        
+        .carousel-inner img {
+            width: 100%;
+            max-height: 100%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .carousel-inner {
+            height: 100%;
+        }
+        
+        .container {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        .footerfondo {
+            background: rgba(211, 210, 210, 0.603);
+        }
+        
+        .footerfondo ul li a:hover {
+            color: #ffffff;
+            padding-left: 2px;
+        }
+        
+        .fa-instagram {
+            color: transparent;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            font-size: 45px;
+        }
+        
+        .fa-twitter {
+            color: #00aced;
+            font-size: 45px;
+        }
+        
+        .fa-facebook-square {
+            color: #3b5998;
+            font-size: 45px;
+        }
+        
+        .centrado {
+            max-width: 70%;
+            height: auto;
+            margin: 10px auto;
+            display: block;
+            border-radius: 85%;
+        }
+        
+        img.centrado {
+            cursor: pointer;
+            transition: all 2s ease;
+        }
+        
+        img.centrado:hover {
+            filter: grayscale(75);
+        }
+        /*bordes imagenes de noticias*/
+        
+        .cards {
+            border-radius: 30px;
+        }
+        /*texto de cada noticia*/
+        
+        .noticia {
+            font-size: 20px;
+        }
+        
+        .texto-noticia {
+            padding: 10px;
+            background: rgba(143, 143, 143, 0.349);
+            border-radius: 50px;
+        }
+        
+        img.logofooter {
+            width: 120px;
+        }
+        
+        .alert {
+            display: block;
+            padding: 12px 20px;
+            background: #f8d7da;
+            color: #721c24;
+            margin-bottom: 10px;
+            border: 1px solid #f5c6cb;
+        }
