@@ -29,7 +29,7 @@ function validarFormulario() {
 
     if (apellido == "" || apellido == null) {
 
-        cambiarColor("apeliido");
+        cambiarColor("apellido");
 
         mostraAlerta("Campo obligatorio");
         return false;

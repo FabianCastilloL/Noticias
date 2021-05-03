@@ -81,7 +81,7 @@
         }
         /*bordes imagenes de noticias*/
         
-        .cards {
+        .card {
             border-radius: 30px;
         }
         /*texto de cada noticia*/
@@ -107,4 +107,39 @@
             color: #721c24;
             margin-bottom: 10px;
             border: 1px solid #f5c6cb;
+        }
+        
+        .containerClima {
+            width: 15%;
+        }
+        /*@media screen and (max-width:768px) {
+            body{
+                background: black;
+            }
+        }
+        */
+        
+        img#icon {
+            width: 25%;
+        }
+        
+        h6#weather {
+            text-transform: capitalize;
+        }
+        
+        button.refresh {
+            display: block;
+            width: 50px;
+            height: 50px;
+            margin: 10px auto;
+            border: 0;
+            font-size: 30px;
+            border-radius: 50%;
+            box-shadow: 10px 4px 18px #252525, 5px 5px 18px #4a4a4a;
+            transition: 0.3s;
+            color: #9c9c9d;
+        }
+        
+        button.refresh:hover {
+            box-shadow: inset 10px 4px 18px #252525, 5px 5px 18px #4a4a4a;
         }
