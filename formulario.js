@@ -1,134 +1,73 @@
-function validarFormulario() {
-
-    $('.alert').remove();
-
-
-    var nombre = $('#nombre').val(),
-        apellido = $('#apellido').val(),
-        correo = $('#correo').val(),
-        celular = $('#celular').val(),
-        mensaje = $('#mensaje').val();
-
-
-    if (nombre == "" || nombre == null) {
-
-        cambiarColor("nombre");
-
-        mostraAlerta("Campo obligatorio");
-        return false;
-    } else {
-        var expresion = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]*$/;
-        if (!expresion.test(nombre)) {
-
-            cambiarColor("nombre");
-            mostraAlerta("Debes completar el campo Nombre");
-            return false;
-        }
+$.validator.setDefaults({
+    submitHandler: function () {
+        alert("submitted!");
     }
-
-
-    if (apellido == "" || apellido == null) {
-
-        cambiarColor("apellido");
-
-        mostraAlerta("Campo obligatorio");
-        return false;
-    } else {
-        var expresion = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]*$/;
-        if (!expresion.test(apellido)) {
-
-            cambiarColor("apellido");
-            mostraAlerta("Debes completar el campo Apellido");
-            return false;
-        }
-    }
-
-
-    if (correo == "" || correo == null) {
-
-        cambiarColor("correo");
-
-        mostraAlerta("Campo obligatorio");
-        return false;
-    } else {
-        var expresion = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
-        if (!expresion.test(correo)) {
-
-            cambiarColor("correo");
-            mostraAlerta("Debes ingresar un E-mail válido");
-            return false;
-        }
-    }
-
-
-    if (celular == "" || celular == null) {
-
-        cambiarColor("celular");
-
-        mostraAlerta("Campo obligatorio");
-        return false;
-    } else {
-        var expresion = /^\d{7,14}$/
-        if (!expresion.test(celular)) {
-
-            cambiarColor("celular");
-            mostraAlerta("Debes ingresar un celular");
-            return false;
-        }
-    }
-
-    if (mensaje == "" || mensaje == null) {
-
-        cambiarColor("mensaje");
-
-        mostraAlerta("Campo obligatorio");
-        return false;
-    } else {
-        var expresion = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]*$/;
-        if (!expresion.test(mensaje)) {
-
-            cambiarColor("mensaje");
-            mostraAlerta("Debes completar el campo Mensaje");
-            return false;
-        }
-    }
-
-    $('form').submit();
-    return true;
-
-}
-
-$('input').focus(function() {
-    $('.alert').remove();
-    colorDefault('nombre');
-    colorDefault('apellido');
-    colorDefault('correo');
-    colorDefault('celular');
-    colorDefault('mensaje');
-
-});
-
-$('textarea').focus(function() {
-    $('.alert').remove();
-    colorDefault('mensaje');
 });
 
 
-function colorDefault(dato) {
-    $('#' + dato).css({
-        border: "1px solid #999"
+$(document).ready(function () {
+    $('#formulario_contacto').validate({
+        rules: {
+            nombre: {
+                required: true,
+                minlength: 4,
+                maxlength: 40
+            },
+            apellido: {
+                required: true,
+                minlength: 3,
+                maxlength: 40
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            comentario: {
+                required: true,
+                minlength: 20
+            },
+            celular: {
+                required: true,
+                number: true,
+                minlength: 8,
+                maxlength: 8
+            },
+            mensaje: {
+                required: true,
+                minlength: 3,
+                maxlength: 200
+            },
+
+        },
+        messages: {
+            nombre: {
+                required: "Debes ingresar el nombre",
+                minlength: "El nombre debe tener mas de 3 letras",
+                maxlength: "El nombre exece la cantidad de letras o caracteres (40)"
+            },
+            apellido: {
+                required: "Debes ingresar el apellido",
+                minlength: "El apellido debe tener mas de 3 letras",
+                maxlength: "El apellido exece la cantidad de letras o caracteres (40)"
+            },
+            email: {
+                required: "Debes ingresar un email",
+                email: "Debes ingresar un email válido ej: 'abcd@gmail.com'"
+            },
+            celular: {
+                required: "debes ingresar un celular",
+                number: "El celular debe contener 8 números",
+                minlength: "El celular ingresado debe contener 8 numeros",
+                maxlength: "El celular ingresado debe contener 8 numeros"
+            },
+            mensaje: {
+                required: "Debes ingresar un mensaje",
+                minlength: "El mensaje debe tener como minimo de 20 letras o caracteres",
+                maxlength: "El mensaje debe tener mas de 20 letras o caracteres y como maximo 200 caracteres o letras"
+            },
+            
+
+        },
     });
-}
+});
 
-
-function cambiarColor(dato) {
-    $('#' + dato).css({
-        border: "1px solid #dd5144"
-    });
-}
-
-
-
-function mostraAlerta(texto) {
-    $('#nombre').before('<div class="alert">Error: ' + texto + '</div>');
-}
