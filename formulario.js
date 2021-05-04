@@ -11,12 +11,12 @@ $(document).ready(function () {
             nombre: {
                 required: true,
                 minlength: 4,
-                maxlength: 40
+                maxlength: 25
             },
             apellido: {
                 required: true,
                 minlength: 3,
-                maxlength: 40
+                maxlength: 20
             },
             email: {
                 required: true,
