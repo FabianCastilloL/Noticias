@@ -143,3 +143,16 @@
         button.refresh:hover {
             box-shadow: inset 10px 4px 18px #252525, 5px 5px 18px #4a4a4a;
         }
+        
+        #divMapa {
+            width: 350px;
+            height: 350px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-style: solid;
+        }
+        
+        #divCoordenadas {
+            background-color: rgb(235, 174, 61);
+            border: solid;
+        }
