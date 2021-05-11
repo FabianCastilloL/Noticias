@@ -14,9 +14,9 @@ $.getJSON('https://mindicador.cl/api', function(data) {
     today = dd + '/' + mm + '/' + yyyy;
 
     $('#fecha').html(today);
-    $('#uf').html(indicadores.uf.valor + ' ' + indicadores.uf.nombre + ' ' + indicadores.uf.unidad_medida);
-    $('#dolar').html(indicadores.dolar.valor + ' ' + indicadores.dolar.nombre + ' ' + indicadores.dolar.unidad_medida);
-    $('#euro').html(indicadores.euro.valor + ' ' + indicadores.euro.nombre + ' ' + indicadores.euro.unidad_medida);
+    $('#uf').html(Math.trunc(indicadores.uf.valor) + ' ' + indicadores.uf.nombre + ' ' + indicadores.uf.unidad_medida);
+    $('#dolar').html(Math.trunc(indicadores.dolar.valor) + ' ' + indicadores.dolar.nombre + ' ' + indicadores.dolar.unidad_medida);
+    $('#euro').html(Math.trunc(indicadores.euro.valor) + ' ' + indicadores.euro.nombre + ' ' + indicadores.euro.unidad_medida);
 }).fail(function() {
     console.log('Error al consumir la API!');
 });
